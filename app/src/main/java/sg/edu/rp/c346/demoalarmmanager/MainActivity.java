@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Calendar cal = Calendar.getInstance();
                 cal.add(Calendar.SECOND,5);
-
+                //set alarm
                 Intent intent = new Intent(MainActivity.this,AlarmReceiverActivity.class);
                 int reqCode = 12345;
                 PendingIntent pendingIntent = PendingIntent.getActivity(MainActivity.this,reqCode,intent,PendingIntent.FLAG_CANCEL_CURRENT);
